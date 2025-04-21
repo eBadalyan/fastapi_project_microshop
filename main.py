@@ -9,6 +9,7 @@ app = FastAPI()
 app.include_router(items_router)
 app.include_router(users_router)
 
+
 @app.get("/")
 def hello_index():
     return {
